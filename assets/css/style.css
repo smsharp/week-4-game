@@ -1,0 +1,82 @@
+body {
+	background-color: #010101;
+	font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans";
+}
+.container {
+	text-align:center;
+}
+#main {
+	background-image: url("../images/wallpaper.jpg");
+	padding: 30px 20px;
+}
+
+.header{
+	color: #fff;
+}
+
+h1 {
+	font-weight: bold;
+	color: #fff;
+}
+h3 {
+	line-height: 0.1;
+	margin-bottom: 30px;
+}
+
+p {
+	color: #fff;
+}
+
+#instructions {
+	padding: 20px 10px;
+}
+
+.col-md-4 {
+	padding-bottom: 25px;
+	color: #fff;
+	background: #033248;
+}
+
+.col-md-8 {
+	background: #000;
+	color: #fff;
+}
+
+.row.match-my-cols {
+    overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+#targetNumberBox {
+	font-size: 51px;
+	padding-top: 20px;
+}
+
+#userTotalBox {
+	background: #fff;
+	padding-bottom: 15px;
+}
+
+#crystals {
+	padding-top: 15px;
+	background: #fff;
+	margin-bottom: 0;
+}
+.brightBlue {
+	background: #0b87ba;
+}
+.brightRed {
+	background: #a21017;
+}
+img {
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+@media (max-width: 272px) {
+	img { width: 90px;
+	}
+}

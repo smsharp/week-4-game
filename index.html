@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crystals Collector Game</title>
+
+  	<!-- JQuery -->
+  	<script src="https://code.jquery.com/jquery.js"></script>
+
+  	<!-- adding javascript file -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  	<!-- CSS stylesheet -->
+  	<link rel="stylesheet" href="assets/css/style.css">
+
+  	<!--viewport tag-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div class= "container">
+		<div class="row" id="main">
+			<div class= "header"><h1>CRYSTALS COLLECTOR!</h1></div>
+			<div id="instructions">
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.</p>
+			</div>
+		</div>
+
+		<div class="row match-my-cols"><!--Scores and random number row-->
+			<div class="col-xs-12 col-sm-12 col-md-8"><!--random number generated-->
+				<div id="numberToMatch">
+					<h2>Number To Get:
+						<div id="targetNumberBox">
+						<span id= "target"></span>
+						</div>
+					</h2>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4"><!--scoreboard-->
+				<div id="scoreboard">
+					<h2><span id= "status">Play Now!</span></h2>
+					<h3>Wins: <span id= "numberWins"></span></h2>
+					<h3>Losses: <span id= "numberLosses"></span></h2>
+				</div>
+			</div>
+		</div><!--Scores and random number row-->
+
+		<div class="row" id="crystals"><!--crystal buttons-->
+			<img src="assets/images/blue.jpg" class=crystalImg id="blue" alt="Blue Gem">
+			<img src="assets/images/green.jpg" class=crystalImg id="green" alt="Green Gem">
+			<img src="assets/images/pink.jpg" class=crystalImg id= "pink" alt="pink Gem">
+			<img src="assets/images/orange.jpg" class=crystalImg id= "orange" alt="orange Gem">
+			<div id="userTotalBox">
+				<h2>Your total score is: <span id="userTotal">0</span></h2>
+			</div>
+		</div>
+
+
+	</div><!--container div-->
+</body>
+</html>
